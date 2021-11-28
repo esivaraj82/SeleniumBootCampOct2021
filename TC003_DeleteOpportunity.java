@@ -1,21 +1,22 @@
-package SelBootCamp;
+package TestNG;
 
+import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TC003_DeleteOpportunity {
 
-	@SuppressWarnings("deprecation")
-	public static void main(String[] args) throws InterruptedException {
+	@Test 
+	public void Delete() throws InterruptedException {
+	//public static void main(String[] args) throws InterruptedException {
 
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--disable-notifications");
